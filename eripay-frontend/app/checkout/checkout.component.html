@@ -1,0 +1,23 @@
+<div class="row checkout-component">
+    <h3 class="text-center">Checkout Summary</h3>
+    <div class="medium-12 columns" *ngFor="#item of items; #index = index">
+        <div class="media-object">
+            <div class="media-object-section">
+                <img class="thumbnail checkout" src="{{item.imgPath}}">
+            </div>
+            <div class="media-object-section">
+                <h5>{{item.name}}</h5>
+                <p>CDN$ {{item.price}} x {{item.count}} </p>
+            </div>
+            <div class="media-object-section">
+                <a (click)="deleteFromCart(index)">  Delete</a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<div class="row">
+    <h5>Total Price: </h5>
+    <h5>CDN$ {{totalPrice}}</h5>
+    <button (click)="checkout()" class="button expanded">Checkout</button> 
+</div>

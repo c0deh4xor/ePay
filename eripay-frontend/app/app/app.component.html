@@ -1,0 +1,10 @@
+<div id='cssmenu'>
+    <ul>
+        <li class='active'><a [routerLink]="['MenuList']">Menu</a></li>
+        <li *ngIf="getCartItemsCount() > 0"><a [routerLink]="['Checkout']">Checkout</a></li>
+    </ul>
+</div>
+<div class="shopping-cart">
+    <a (click)="goToCheckout()"><span class="badge size-12">{{getCartItemsCount()}}</span><i class="fi-shopping-cart size-36"></i></a>
+</div>
+<router-outlet></router-outlet>

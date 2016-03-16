@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>ERIPAY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="foundation/css/foundation-icons.css" />
+    <link rel="stylesheet" href="foundation/css/foundation.css" />
+    <link rel="stylesheet" href="styles.css">
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfills, in this exact order -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/http.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script>
+    System.config({
+        packages: {
+            app: {
+                format: 'register',
+                defaultExtension: 'js'
+            }
+        }
+    });
+    System.import('app/main')
+        .then(null, console.error.bind(console));
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
+</head>
+<base href="/">
+<!-- 3. Display the application -->
+
+<body>
+    <my-app></my-app>
+    <script src="foundation/js/vendor/jquery.min.js"></script>
+    <script src="foundation/js/vendor/what-input.min.js"></script>
+    <script src="foundation/js/foundation.js"></script>
+    <script>
+    $(document).foundation();
+    </script>
+</body>
+
+</html>

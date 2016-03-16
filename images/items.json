@@ -1,0 +1,11 @@
+db.items.insertMany(
+   [
+      { "_id" : "0001", "name" : "BAGEL", "price" : 1.50, "image" : "/home/eripay/images/bagel.jpg" },
+      { "_id" : "0002", "name" : "BURGER", "price" : 5.00, "image" : "/home/eripay/images/burger.jpg" },
+      { "_id" : "0003", "name" : "FAJITAS", "price" : 6.60, "image" : "/home/eripay/images/fajitas.jpg" },
+      { "_id" : "0004", "name" : "PIZZA", "price" : 3.25, "image" : "/home/eripay/images/pizza.jpg" },
+      { "_id" : "0005", "name" : "TOMATOES", "price" : 0.30, "image" : "/home/eripay/images/tomates.jpg" },
+      { "_id" : "0006", "name" : "VALUE_MEAL", "price" : 5.51, "image" : "/home/eripay/images/value_meal.jpg" },
+      { "_id" : "0007", "name" : "DRINK", "price" : 1.50, "image" : "/home/eripay/images/drink.jpg" }
+    ]
+)

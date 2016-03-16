@@ -1,0 +1,11 @@
+.*
+*.orig
+*.log
+!.gitignore
+!.gitkeep
+!.jshintrc
+!.jscsrc
+*.js
+*.js.map
+node_modules
+*.d.ts

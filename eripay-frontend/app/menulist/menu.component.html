@@ -1,0 +1,12 @@
+<div>
+    <hr>
+    <div class="row small-up-2 large-up-4">
+        <div class="column" *ngFor="#item of items; #index = index">
+            <img class="thumbnail" src="{{item.imgPath}}">
+            <h5>{{item.name}}</h5>
+            <p>CDN$ {{item.price}}</p>
+            <a class="button expanded" (click)="onAddToCart(index)">Add To Cart</a>
+        </div>
+    </div>
+    <hr>
+</div>
